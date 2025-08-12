@@ -5,7 +5,7 @@ import sys
 import os.path
 
 if len(sys.argv) != 2 or not os.path.isfile(sys.argv[1]):
-    print("wrong parameters - supply the path to a file inside your Firefox profile's 'bookmarkbackups' directory")
+    print("wrong parameters - supply the path to your Firefox profile's 'places.sqlite' file")
     exit(1)
 conn = sqlite3.Connection(f"file:{sys.argv[1]}?immutable=1")
 places = conn.execute("SELECT url, visit_count FROM 'moz_places' order by visit_count desc, url asc").fetchall()

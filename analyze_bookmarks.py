@@ -31,7 +31,7 @@ def analyze(node: dict):
 
 
 if len(sys.argv) != 2 or not os.path.isfile(sys.argv[1]):
-    print("wrong parameters - supply the path to your Firefox profile's 'places.sqlite' file")
+    print("wrong parameters - supply the path to a file inside your Firefox profile's 'bookmarkbackups' directory")
     exit(1)
 bookmarks = json.loads(mozlz4_to_text(sys.argv[1]))
 bookmark_count_for_host = dict()
