@@ -8,3 +8,8 @@ So I wrote two small scripts which you are invited to use as well
 ## How to use
 
 Just start any of the `analyze_*.py` scripts without parameters, it will tell you which parameter(s) it expects.
+
+## License
+
+This project is licensed under GPL v3. If you submit or contribute changes, these are automatically licensed
+under GPL v3 as well. If you don't want that, please don't submit the contribution (e.g. pull request)!
